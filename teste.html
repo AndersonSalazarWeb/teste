@@ -3,9 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Testando GitHub</title>
+	<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 </head>
+
 <body>
 	<h1>Olá, mundo!</h1>
 	<p>Este é a modificação do projeto.</p>
+	
+	<hr></hr>
+	
+	<div ng-app="">
+ 
+		<input type="text" ng-model="nome" placeholder="Digite Seu Nome">
+		<input type="text" ng-model="sobre" placeholder="Digite Seu Sobrenome">
+				
+		<p ng-bind="nome"></p>
+		<p ng-bind="sobre"></p>
+
+	</div>
+	
 </body>
 </html>
